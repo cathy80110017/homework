@@ -1,6 +1,6 @@
-﻿Name: 蘇東坡xxx
+﻿Name: 陳佳吟
 
-ID: 108820xxx
+ID: 108820002
 
 How many hours you spend on doing the homework? 0.5hours
 
