@@ -1,7 +1,0 @@
-﻿Name: 蘇東坡xxx
-
-ID: 108820002
-
-How many hours you spend on doing the homework? 1 hours
-
-(remember to delete *.exe)
