@@ -9,26 +9,24 @@
 
 #include<stdio.h>
 int main(){
-    int month1, day1, year1,
-        month2, day2, year2;
+    int date[3][2];       // year, month, day,
     printf("Enter first date(mm/dd/yy):");
-    scanf("%d/%d/%d",&month1,&day1,&year1);
+    scanf("%d/%d/%d",&date[1][0],&date[2][0],&date[0][0]);      //輸入m1/d1/y1
     printf("\nEnter second date(mm/dd/yy):");
-    scanf("%d/%d/%d",&month2,&day2,&year2);
+    scanf("%d/%d/%d",&date[1][1],&date[2][1],&date[0][1]);      //輸入m2/d2/y2
 
     for (int i = 0; i < 3; i++){
-        if (year1>year2){
-            printf("%d/%d/%d is earlier than %d/%d/%d",month1,day1,year1,month2,day2,year2);
+        if (date[i][0]<date[i][1]){
+            printf("%02d/%02d/%02d is earlier than %d/%d/%d\n",date[1][0],date[2][0],date[0][0],date[1][1],date[2][1],date[0][1]); //輸出
             break;
         }
-        else if(year2>year1){
-            printf("%d/%d/%d is earlier than %d/%d/%d",month2,day2,year2,month1,day1,year1);
+        else if(date[i][0]>date[i][1]){
+            printf("%02d/%02d/%02d is earlier than %d/%d/%d\n",date[1][1],date[2][1],date[0][1],date[1][0],date[2][0],date[0][0]); //輸出
             break;
         }
-        
-        
+        else{
+            continue;
+        }
     }
-        
-
     return 0;
 }
