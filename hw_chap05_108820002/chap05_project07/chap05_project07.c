@@ -10,13 +10,22 @@
 int main(){
     int n[4];
     int max, min;
-    printf("Enter four integers:");
-    for (int i = 0; i < 4; i++){
-        scanf("%d",n[i]);
+    int count=4;
+    printf("Enter four integers : ");
+    for (int i = 0; i < count; i++){
+        scanf("%d",&n[i]);              //迴圈輸入
     }
-    for (int i = 0; i < 4; i++){
-        
+    max=n[0];
+    min=n[0];                               
+    for (int i = 0; i < count; i++){
+        if(n[i]>max){
+            max=n[i];                   //找最大
+        }
+        if (n[i]<min){
+            min=n[i];                   //找最小
+       }
     }
-    
+    printf("Largest: %d\n",max);        //輸出最大
+    printf("Smallest: %d\n",min);       //輸出最小
     return 0;
 }
