@@ -43,5 +43,6 @@ int main(){
     else{
         printf("arriving at %02d:%02d p.m.\n",(timetable[1][num]/60)-12,timetable[1][num]%60);         //後半段12點後輸出
     }
+    printf("Hello World");
     return 0;
 }
