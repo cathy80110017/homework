@@ -13,15 +13,17 @@
 int main(){
     int num, a, b;
     printf("Enter a fraction: ");
-    scanf("%d/%d",&a,&b);
+    scanf("%d/%d",&a,&b);       //input
     int i=2;
 
-    while(){
+    while((i <= a)&&(i <= b)){
         if ((a%i == 0) && (b%i == 0)){
-            a=a/i;
-            b=b/i
+            a=a/i;                          //約分
+            b=b/i;
         }
+        i++;
     }        
 
+    printf("In lowest terms:%d/%d\n",a,b);  //output
     return 0;
 }

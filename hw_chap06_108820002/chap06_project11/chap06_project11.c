@@ -8,6 +8,11 @@
 /*****************************************************************/
 #include<stdio.h>
 int main(){
-    
+    float e = 0.0f, denom=1;
+    for (int i = 1; i < 11; i++){
+        e = e + 1/denom;
+        denom = denom*i;
+    }
+    printf("Approximation of e: %f\n",e);
     return 0;
 }
