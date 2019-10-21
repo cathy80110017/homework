@@ -1,17 +1,6 @@
-<<<<<<< HEAD:hw_chap04_108820002/º╣ª¿_chap04_º@╖~⌐╥╗▌ñp«╔╝╞.txt
-﻿Name: 蘇東坡xxx
+Name: 陳佳吟
 
 ID: 108820002
 
 How many hours you spend on doing the homework? 1 hours
 
-(remember to delete *.exe)
-=======
-﻿Name: 蘇東坡xxx
-
-ID: 108820xxx
-
-How many hours you spend on doing the homework? 1 hours
-
-(remember to delete *.exe)
->>>>>>> bf2c29e571ae5be731989597adff6f8a200904bd:hw_chap04_108820002/完成_chap04_作業所需小時數.txt
