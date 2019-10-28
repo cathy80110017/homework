@@ -14,7 +14,7 @@ int main(){
     if ((a>100)||(a<0)){
         printf("Error\n");                  //輸出錯誤
     }
-    else{
+    else{ 
         switch (a/10){
         case 10:
         case 9:
