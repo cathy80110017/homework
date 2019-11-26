@@ -126,7 +126,7 @@ void analze_hand(int num_in_rank[], int num_in_suit[]){
 void print_result(void){
     if (straight && flush)              printf("Straight flush");       //輸出
     else if (four)                      printf("Four of a kin");        //輸出
-    else if (three && pairs == 1)       printf("Full house");           //輸出
+    else if (three && pairs     )       printf("Full house");           //輸出
     else if (flush)                     printf("Flush");                //輸出
     else if (straight)                  printf("Straight");             //輸出
     else if (three)                     printf("Three of a kind");      //輸出
