@@ -6,38 +6,35 @@
 /* Purpose: 08-07                                                */
 /* Change History: log the change history of the program         */
 /*****************************************************************/
-
 #include<stdio.h>
-#include<math.h>
-#include<stdlib.h>
-#include<string.h>
-#include<ctype.h>
-
 int main(){
-    char ch, sentence[100] = {' '}, terminator = '.';
-    int i = 0, start, finish;
-
-    printf("Enter a sentence : ");
-    for (i = 1; i < 100; i++){
-        ch = getchar();                 //輸入
-        if (ch == '.'  || ch == '?' || ch == '!'){  //如果遇標點符號則跳出
-            terminator = ch;
-            break;
-        }
-        sentence[i] = ch;
-    }
-
-    printf("Reversal of sentence :");
-    finish = i;
-    for (start = finish - 1; start >= 0; start--){
-        if (sentence[start] == ' '){
-            for (int j = start; j < finish; j++){
-                putchar(sentence[j]);
-            }
-            finish = start;            
-        }
-    }
-    printf("%c\n", terminator);         //輸出標點佛號
     
+
+    int count = 5;
+    int arr[5][5], row[5] = {0}, column[5] = {0};
+    int i = 0, j = 0;
+
+    for ( i = 0; i < count; i++){
+        printf("Enter row %d : ", i+1);
+        for ( j = 0; j < count; j++){           //輸入
+            scanf("%d",&arr[i][j]);
+            row[i] = row[i] + arr[i][j];        //每輸入一個，橫排累加
+            
+        }
+        for ( j = 0; j < count; j++){
+            column[j] = column[j] + arr[i][j];  //直排累加
+        } 
+    }
+
+    printf("Row totals: ");                     //輸出ROW
+    for (i = 0; i < count; i++){
+        printf("%d ", row[i]);
+    }
+    printf("\nColumn totals: ");                //輸出Column
+    for (i = 0; i < count; i++){
+        printf("%d ", column[i]);
+    }
+    printf("\n");
+
     return 0;
 }
